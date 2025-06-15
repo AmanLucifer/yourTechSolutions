@@ -1,6 +1,5 @@
-
 import React from "react";
-import { Youtube, Gear } from "lucide-react";
+import { Youtube, Settings } from "lucide-react";
 
 const socialLinks = [
   {
@@ -9,7 +8,7 @@ const socialLinks = [
     label: "YouTube"
   },
   {
-    icon: <Gear size={22} />,
+    icon: <Settings size={22} />,
     href: "#",
     label: "Technical Blog"
   }

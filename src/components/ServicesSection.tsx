@@ -1,12 +1,12 @@
 
 import React from "react";
-import { Gear, Youtube, Gift, Store } from "lucide-react";
+import { Settings, Youtube, Gift, Store } from "lucide-react";
 
 const services = [
   {
     title: "Custom Software & Apps",
     desc: "Build branded applications to attract customers and process orders online.",
-    icon: <Gear size={36} className="text-brand-blue" />,
+    icon: <Settings size={36} className="text-brand-blue" />,
   },
   {
     title: "Social Media Management",

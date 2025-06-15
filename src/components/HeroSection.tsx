@@ -1,6 +1,8 @@
 
 import React from "react";
-import heroImage from "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
+
+const heroImage =
+  "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
 
 const HeroSection: React.FC = () => {
   return (
