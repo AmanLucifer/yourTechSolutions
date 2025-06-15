@@ -2,7 +2,7 @@
 import React from "react";
 
 const heroImage =
-  "https://images.unsplash.com/photo-1649972904349-6e44c42644a7";
+  "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1400&q=80";
 
 const HeroSection: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0 z-[-1]">
         <img
           src={heroImage}
-          alt="Small business using technology"
+          alt="Small business owner using technology and growing"
           className="w-full h-full object-cover opacity-80"
           style={{ objectPosition: "center top" }}
         />
