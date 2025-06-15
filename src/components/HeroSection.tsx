@@ -6,9 +6,13 @@ const heroImage =
 
 const HeroSection: React.FC = () => {
   return (
-    <section id="home" className="relative min-h-[540px] flex items-center justify-center">
+    <section
+      id="home"
+      className="relative min-h-[540px] flex items-center justify-center overflow-hidden"
+      style={{ minHeight: "540px" }}
+    >
       {/* Background Image */}
-      <div className="absolute inset-0 z-[-1]">
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <img
           src={heroImage}
           alt="Small business owner using technology and growing"
@@ -17,7 +21,7 @@ const HeroSection: React.FC = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-brand-blue/70 via-brand-teal/50 to-transparent" />
       </div>
-      <div className="container relative py-32 flex flex-col items-center text-center max-w-3xl">
+      <div className="container relative z-10 py-32 flex flex-col items-center text-center max-w-3xl">
         <h1 className="text-4xl sm:text-5xl font-bold text-white drop-shadow-md animate-fade-in mb-4">
           Empowering Small & Medium Businesses with Smart Tech Solutions
         </h1>
