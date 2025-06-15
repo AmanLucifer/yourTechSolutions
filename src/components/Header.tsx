@@ -2,6 +2,13 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import ConsultationModal from "./ConsultationModal";
+import HeroSection from "./HeroSection";
+import AboutSection from "./AboutSection";
+import ServicesSection from "./ServicesSection";
+import CaseStudiesSection from "./CaseStudiesSection";
+import TestimonialsSection from "./TestimonialsSection";
+import CallToActionBanner from "./CallToActionBanner";
+import Footer from "./Footer";
 
 const navLinks = [
   { text: "Home", href: "#home" },
@@ -15,6 +22,9 @@ const navLinks = [
 const Header: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+
+  // Handler to be passed down as a prop
+  const openConsultationModal = () => setModalOpen(true);
 
   return (
     <>
@@ -40,7 +50,7 @@ const Header: React.FC = () => {
             <li>
               <button
                 type="button"
-                onClick={() => setModalOpen(true)}
+                onClick={openConsultationModal}
                 className="ml-4 bg-brand-teal text-white px-5 py-2 rounded-lg font-semibold shadow hover:bg-brand-blue transition-colors"
                 style={{ outline: "none", border: "none", cursor: "pointer" }}
               >
@@ -76,7 +86,7 @@ const Header: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => {
-                    setModalOpen(true);
+                    openConsultationModal();
                     setMobileOpen(false);
                   }}
                   className="w-full block bg-brand-teal text-white px-5 py-2 rounded-lg font-semibold shadow hover:bg-brand-blue transition-colors"
@@ -96,3 +106,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+

@@ -1,10 +1,14 @@
 
 import React from "react";
 
+interface HeroSectionProps {
+  onConsultationOpen?: () => void;
+}
+
 const heroImage =
   "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1400&q=80";
 
-const HeroSection: React.FC = () => {
+const HeroSection: React.FC<HeroSectionProps> = ({ onConsultationOpen }) => {
   return (
     <section
       id="home"
@@ -35,12 +39,14 @@ const HeroSection: React.FC = () => {
           >
             Explore Our Services
           </a>
-          <a
-            href="#contact"
+          <button
+            type="button"
+            onClick={onConsultationOpen}
             className="bg-white/90 text-brand-blue font-semibold px-6 py-3 rounded-lg shadow hover:bg-brand-orange hover:text-white transition-colors"
+            style={{ outline: "none", border: "none", cursor: "pointer" }}
           >
             Request a Demo
-          </a>
+          </button>
         </div>
       </div>
     </section>

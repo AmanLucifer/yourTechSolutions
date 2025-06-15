@@ -7,18 +7,25 @@ import CaseStudiesSection from "@/components/CaseStudiesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CallToActionBanner from "@/components/CallToActionBanner";
 import Footer from "@/components/Footer";
+import React, { useRef, useState } from "react";
+import ConsultationModal from "@/components/ConsultationModal";
 
 const Index = () => {
+  // We'll manage the modal open state here and pass it down
+  const [consultationOpen, setConsultationOpen] = useState(false);
+
   return (
     <div className="font-sans bg-white min-h-screen w-full">
       <Header />
+      {/* Top-level ConsultationModal for global use */}
+      <ConsultationModal open={consultationOpen} onClose={() => setConsultationOpen(false)} />
       <main>
-        <HeroSection />
+        <HeroSection onConsultationOpen={() => setConsultationOpen(true)} />
         <AboutSection />
         <ServicesSection />
         <CaseStudiesSection />
         <TestimonialsSection />
-        <CallToActionBanner />
+        <CallToActionBanner onConsultationOpen={() => setConsultationOpen(true)} />
       </main>
       <Footer />
     </div>
