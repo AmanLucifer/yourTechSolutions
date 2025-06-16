@@ -23,10 +23,6 @@ const services = [
     desc: "Tailored tools for restaurants, electronics shops, and all your specialty needs.",
     icon: <Store size={36} className="text-brand-blue" />,
   },
-<<<<<<< HEAD
-=======
-  
->>>>>>> cadd483 (first commit)
 ];
 
 const ServicesSection: React.FC = () => (
