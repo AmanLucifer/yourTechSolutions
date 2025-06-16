@@ -28,6 +28,10 @@ const cases = [
   },
 ];
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> cadd483 (first commit)
 const CaseStudiesSection: React.FC = () => {
   const [selected, setSelected] = useState<number | null>(null);
 

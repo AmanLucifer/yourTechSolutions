@@ -42,9 +42,9 @@ const Footer: React.FC = () => (
       <div>
         <span className="font-bold text-lg text-brand-orange">Contact Us</span>
         <ul className="mt-4 space-y-2 text-gray-300">
-          <li>Email: <a href="mailto:info@yourtech.com" className="hover:text-brand-orange">info@yourtech.com</a></li>
-          <li>Phone: <a href="tel:+1234567890" className="hover:text-brand-orange">+1 (234) 567-890</a></li>
-          <li>Address: 123 Tech Street, City, Country</li>
+          <li>Email: <a href="mailto:hello@yourtechsolutions.in" className="hover:text-brand-orange">hello@yourtechsolutions.in</a></li>
+          <li>Phone: <a href="tel:+91 9905442618" className="hover:text-brand-orange">+91 9905442618</a></li>
+          <li>Address: Patna-Bihar</li>
         </ul>
       </div>
       {/* Socials */}

@@ -6,7 +6,11 @@ interface HeroSectionProps {
 }
 
 const heroImage =
+<<<<<<< HEAD
   "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1400&q=80";
+=======
+  "./image/Hero-Img.jpeg";
+>>>>>>> cadd483 (first commit)
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onConsultationOpen }) => {
   return (
