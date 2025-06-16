@@ -29,7 +29,7 @@ const Footer: React.FC = () => (
     <div className="container grid md:grid-cols-3 gap-10">
       {/* Links */}
       <div>
-        <span className="font-bold text-lg text-brand-orange">YourTech Solutions</span>
+        <span className="font-bold text-lg text-brand-orange">YourTech-Solutions</span>
         <ul className="mt-4 space-y-2">
           {footerLinks.map(link => (
             <li key={link.text}>
